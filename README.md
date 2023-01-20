@@ -7,7 +7,7 @@ Installing Odoo 16 with one command.
 Install [docker](https://docs.docker.com/get-docker/) and [docker-compose](https://docs.docker.com/compose/install/) yourself, then run:
 
 ``` bash
-curl -s https://raw.githubusercontent.com/gumyn/odoo-16-docker-compose/master/run.sh | sudo bash -s odoo-one 10016 20016
+curl -s https://raw.githubusercontent.com/gumyn/odoo16/master/run.sh | sudo bash -s odoo-one 10016 20016
 ```
 
 to set up first Odoo instance @ `localhost:10016` (default master password: `gumy.love`)
@@ -15,7 +15,7 @@ to set up first Odoo instance @ `localhost:10016` (default master password: `gum
 and
 
 ``` bash
-curl -s https://raw.githubusercontent.com/gumyn/odoo-16-docker-compose/master/run.sh | sudo bash -s odoo-two 11016 21016
+curl -s https://raw.githubusercontent.com/gumyn/odoo16/master/run.sh | sudo bash -s odoo-two 11016 21016
 ```
 
 to set up another Odoo instance @ `localhost:11016` (default master password: `gumy.love`)
@@ -56,7 +56,7 @@ docker-compose up -d
 **If you get the permission issue**, change the folder permission to make sure that the container is able to access the directory:
 
 ``` sh
-$ git clone https://github.com/gumyn/odoo-16-docker-compose
+$ git clone https://github.com/gumyn/odoo16
 $ sudo chmod -R 777 addons
 $ sudo chmod -R 777 etc
 $ mkdir -p postgresql
